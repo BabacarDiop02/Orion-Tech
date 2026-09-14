@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+:root {
+  --color-midnight: #07111f;
+  --color-deepspace: #0b1728;
+  --color-blue: #2563eb;
+  --color-cyan: #22d3ee;
+  --color-gold: #f5b942;
+  --color-offwhite: #f8fafc;
+  --color-gray: #94a3b8;
+
+  --background: var(--color-midnight);
+  --foreground: var(--color-offwhite);
+}
+
+@theme inline {
+  --color-midnight: var(--color-midnight);
+  --color-deepspace: var(--color-deepspace);
+  --color-orion-blue: var(--color-blue);
+  --color-orion-cyan: var(--color-cyan);
+  --color-orion-gold: var(--color-gold);
+  --color-offwhite: var(--color-offwhite);
+  --color-orion-gray: var(--color-gray);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-display: var(--font-space-grotesk);
+  --font-sans: var(--font-inter);
+
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-drift: drift 22s ease-in-out infinite;
+  --animate-pulse-slow: pulse-slow 4s ease-in-out infinite;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes drift {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(12px, -14px);
+    }
+  }
+
+  @keyframes pulse-slow {
+    0%, 100% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-blue) transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-blue);
+  color: var(--color-offwhite);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.mask-fade-b {
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.orion-cursor {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  html.has-custom-cursor,
+  html.has-custom-cursor a,
+  html.has-custom-cursor button {
+    cursor: none;
+  }
+
+  html.has-custom-cursor .orion-cursor {
+    display: flex;
+  }
+}
