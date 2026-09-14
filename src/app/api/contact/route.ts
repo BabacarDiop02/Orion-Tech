@@ -9,14 +9,14 @@ export async function POST(request: Request) {
   try {
     body = await request.json();
   } catch {
-    return NextResponse.json({ ok: false, error: "Invalid JSON body." }, { status: 400 });
+    return NextResponse.json({ ok: false, error: "Requête invalide." }, { status: 400 });
   }
 
   const parsed = contactSchema.safeParse(body);
 
   if (!parsed.success) {
     return NextResponse.json(
-      { ok: false, error: "Validation failed.", issues: parsed.error.flatten().fieldErrors },
+      { ok: false, error: "La validation a échoué.", issues: parsed.error.flatten().fieldErrors },
       { status: 400 }
     );
   }

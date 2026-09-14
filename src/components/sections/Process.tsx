@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Reveal from "@/components/ui/Reveal";
 import SectionLabel from "@/components/ui/SectionLabel";
+import SectionBackground from "@/components/ui/SectionBackground";
 import { PROCESS_STEPS } from "@/lib/data";
 
 export default function Process() {
@@ -15,8 +16,9 @@ export default function Process() {
   const lineScale = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <section id="process" className="relative bg-midnight py-28 lg:py-36">
-      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+    <section id="process" className="relative bg-midnight py-28 lg:py-36 overflow-hidden">
+      <SectionBackground src="/images/sections/process.webp" overlayClassName="bg-midnight/80" parallax />
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal>
           <SectionLabel index="06" label="Processus" />
         </Reveal>

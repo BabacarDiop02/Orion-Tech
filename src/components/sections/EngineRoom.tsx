@@ -3,14 +3,16 @@
 import { motion } from "framer-motion";
 import Reveal from "@/components/ui/Reveal";
 import SectionLabel from "@/components/ui/SectionLabel";
+import SectionBackground from "@/components/ui/SectionBackground";
 import { TECH_STACK } from "@/lib/data";
 
 const LAYERS = Object.entries(TECH_STACK);
 
 export default function EngineRoom() {
   return (
-    <section id="engine-room" className="relative bg-navy py-28 lg:py-36">
-      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+    <section id="engine-room" className="relative bg-navy py-28 lg:py-36 overflow-hidden">
+      <SectionBackground src="/images/sections/engineroom.webp" overlayClassName="bg-navy/85" />
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal>
           <SectionLabel index="07" label="Expertise" light />
         </Reveal>

@@ -4,14 +4,16 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Reveal from "@/components/ui/Reveal";
 import SectionLabel from "@/components/ui/SectionLabel";
+import SectionBackground from "@/components/ui/SectionBackground";
 import { SERVICES } from "@/lib/data";
 
 export default function Services() {
   const [active, setActive] = useState<number | null>(null);
 
   return (
-    <section id="services" className="relative bg-navy py-28 lg:py-36">
-      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+    <section id="services" className="relative bg-navy py-28 lg:py-36 overflow-hidden">
+      <SectionBackground src="/images/sections/services.webp" overlayClassName="bg-navy/85" />
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal>
           <SectionLabel index="04" label="Solutions" light />
         </Reveal>

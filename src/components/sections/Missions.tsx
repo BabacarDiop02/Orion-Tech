@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { X } from "lucide-react";
 import Reveal from "@/components/ui/Reveal";
 import SectionLabel from "@/components/ui/SectionLabel";
+import SectionBackground from "@/components/ui/SectionBackground";
 import { MISSIONS } from "@/lib/data";
 
 const DETAIL_ROWS = [
@@ -27,8 +28,9 @@ export default function Missions() {
   }, [mission]);
 
   return (
-    <section id="missions" className="relative bg-midnight py-28 lg:py-36">
-      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+    <section id="missions" className="relative bg-midnight py-28 lg:py-36 overflow-hidden">
+      <SectionBackground src="/images/sections/missions.webp" overlayClassName="bg-midnight/85" parallax />
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal>
           <SectionLabel index="05" label="Orion / Missions" />
         </Reveal>
@@ -39,7 +41,7 @@ export default function Missions() {
         </Reveal>
       </div>
 
-      <div className="mt-16 lg:mt-20 flex flex-col">
+      <div className="relative mt-16 lg:mt-20 flex flex-col">
         {MISSIONS.map((project, i) => (
           <Reveal key={project.id} delay={i * 0.1}>
             <button

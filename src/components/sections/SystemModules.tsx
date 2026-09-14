@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Reveal from "@/components/ui/Reveal";
 import SectionLabel from "@/components/ui/SectionLabel";
+import SectionBackground from "@/components/ui/SectionBackground";
 import { SYSTEM_MODULES } from "@/lib/data";
 
 export default function SystemModules() {
@@ -12,7 +13,8 @@ export default function SystemModules() {
 
   return (
     <section id="system" className="relative bg-midnight py-28 lg:py-40 overflow-hidden">
-      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+      <SectionBackground src="/images/sections/system.webp" overlayClassName="bg-midnight/80" />
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal>
           <SectionLabel index="03" label="Le Système" />
         </Reveal>

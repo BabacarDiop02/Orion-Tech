@@ -1,8 +1,10 @@
 import Reveal from "@/components/ui/Reveal";
+import SectionBackground from "@/components/ui/SectionBackground";
 
 export default function Philosophy() {
   return (
     <section className="relative bg-midnight py-32 lg:py-48 overflow-hidden">
+      <SectionBackground src="/images/sections/philosophy.webp" overlayClassName="bg-midnight/85" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-orion-blue/5 blur-[140px] pointer-events-none" />
 
       <div className="relative mx-auto max-w-4xl px-6 lg:px-10 text-center">

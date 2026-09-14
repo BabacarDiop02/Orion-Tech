@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Constellation from "@/components/ui/Constellation";
+import SectionBackground from "@/components/ui/SectionBackground";
 
 const SEQUENCE = [
   { text: "ET SI", delay: 0 },
@@ -13,6 +14,7 @@ const SEQUENCE = [
 export default function FinalCTA() {
   return (
     <section className="relative bg-midnight py-32 lg:py-48 overflow-hidden">
+      <SectionBackground src="/images/sections/finalcta.webp" overlayClassName="bg-midnight/80" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] rounded-full bg-orion-blue/10 blur-[150px] pointer-events-none" />
       <div className="absolute top-10 right-0 opacity-50">
         <Constellation density="cta" className="w-64 h-32 lg:w-96 lg:h-44" />

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Reveal from "@/components/ui/Reveal";
 import SectionLabel from "@/components/ui/SectionLabel";
+import SectionBackground from "@/components/ui/SectionBackground";
 
 const SATELLITES = [
   { label: "Problème", angle: -90 },
@@ -15,7 +16,8 @@ const SATELLITES = [
 export default function Idea() {
   return (
     <section id="idea" className="relative bg-navy py-28 lg:py-40 overflow-hidden">
-      <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-16 items-center">
+      <SectionBackground src="/images/sections/idea.webp" overlayClassName="bg-navy/80" />
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-16 items-center">
         <div className="lg:col-span-5">
           <Reveal>
             <SectionLabel index="02" label="L'Idée" light />

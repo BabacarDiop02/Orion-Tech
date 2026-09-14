@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Reveal from "@/components/ui/Reveal";
 import SectionLabel from "@/components/ui/SectionLabel";
+import SectionBackground from "@/components/ui/SectionBackground";
 
 const DOTS = [
   { x: 50, y: 20, delay: 0 },
@@ -23,7 +24,8 @@ const EDGES: [number, number][] = [
 export default function Signal() {
   return (
     <section id="signal" className="relative bg-midnight py-28 lg:py-40 overflow-hidden">
-      <div className="mx-auto max-w-5xl px-6 lg:px-10 text-center">
+      <SectionBackground src="/images/sections/signal.webp" overlayClassName="bg-midnight/80" />
+      <div className="relative mx-auto max-w-5xl px-6 lg:px-10 text-center">
         <Reveal>
           <SectionLabel index="01" label="Le Signal" />
         </Reveal>

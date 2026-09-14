@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Reveal from "@/components/ui/Reveal";
+import SectionBackground from "@/components/ui/SectionBackground";
 import { CONTACT_INFO } from "@/lib/data";
 
 const REACH_NODES = [
@@ -18,7 +19,8 @@ const REACH_NODES = [
 export default function Origin() {
   return (
     <section id="origin" className="relative bg-navy py-28 lg:py-40 overflow-hidden">
-      <div className="mx-auto max-w-6xl px-6 lg:px-10 text-center">
+      <SectionBackground src="/images/sections/origin.webp" overlayClassName="bg-navy/85" parallax />
+      <div className="relative mx-auto max-w-6xl px-6 lg:px-10 text-center">
         <Reveal>
           <p className="font-display text-sm tracking-[0.3em] text-orion-muted">
             {CONTACT_INFO.coordinates}
