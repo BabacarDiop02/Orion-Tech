@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 import CustomCursor from "@/components/ui/CustomCursor";
+import Loader from "@/components/ui/Loader";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -22,11 +23,11 @@ const siteUrl = "https://oriontech.sn";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Orion Tech — Solutions digitales sur mesure au Sénégal",
+    default: "ORION TECH — Digital Solutions Built in Dakar",
     template: "%s | Orion Tech",
   },
   description:
-    "Orion Tech conçoit et développe des sites web, applications mobiles, logiciels et plateformes digitales sur mesure depuis Dakar, Sénégal.",
+    "Orion Tech conçoit et développe des solutions digitales sur mesure : applications web, mobile, logiciels, plateformes et systèmes intelligents depuis Dakar, Sénégal.",
   keywords: [
     "Agence digitale Sénégal",
     "Agence web Dakar",
@@ -50,23 +51,23 @@ export const metadata: Metadata = {
     locale: "fr_SN",
     url: siteUrl,
     siteName: "Orion Tech",
-    title: "Orion Tech — Solutions digitales sur mesure au Sénégal",
+    title: "ORION TECH — Digital Solutions Built in Dakar",
     description:
-      "Nous transformons vos idées en solutions digitales. Sites web, applications mobiles, logiciels et plateformes sur mesure, conçus depuis Dakar.",
+      "Orion Tech conçoit et développe des solutions digitales sur mesure : applications web, mobile, logiciels, plateformes et systèmes intelligents depuis Dakar, Sénégal.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Orion Tech — Digital solutions. Built with purpose.",
+        alt: "Orion Tech — Digital Engineering Studio, Dakar",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Orion Tech — Solutions digitales sur mesure au Sénégal",
+    title: "ORION TECH — Digital Solutions Built in Dakar",
     description:
-      "Nous transformons vos idées en solutions digitales, depuis Dakar, Sénégal.",
+      "Orion Tech conçoit et développe des solutions digitales sur mesure depuis Dakar, Sénégal.",
     images: ["/og-image.png"],
   },
 };
@@ -99,6 +100,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
+        <Loader />
         <CustomCursor />
         {children}
       </body>

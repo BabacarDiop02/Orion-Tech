@@ -1,16 +1,16 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
-import Impact from "@/components/sections/Impact";
+import Signal from "@/components/sections/Signal";
+import Idea from "@/components/sections/Idea";
+import SystemModules from "@/components/sections/SystemModules";
 import Services from "@/components/sections/Services";
+import Missions from "@/components/sections/Missions";
+import Origin from "@/components/sections/Origin";
 import Process from "@/components/sections/Process";
-import WhyUs from "@/components/sections/WhyUs";
-import Projects from "@/components/sections/Projects";
-import Technology from "@/components/sections/Technology";
-import Stats from "@/components/sections/Stats";
+import EngineRoom from "@/components/sections/EngineRoom";
 import Philosophy from "@/components/sections/Philosophy";
-import About from "@/components/sections/About";
-import CTA from "@/components/sections/CTA";
+import FinalCTA from "@/components/sections/FinalCTA";
 import Contact from "@/components/sections/Contact";
 
 export default function Home() {
@@ -19,16 +19,16 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Impact />
+        <Signal />
+        <Idea />
+        <SystemModules />
         <Services />
+        <Missions />
+        <Origin />
         <Process />
-        <WhyUs />
-        <Projects />
-        <Technology />
-        <Stats />
+        <EngineRoom />
         <Philosophy />
-        <About />
-        <CTA />
+        <FinalCTA />
         <Contact />
       </main>
       <Footer />

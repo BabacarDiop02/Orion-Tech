@@ -1,170 +1,182 @@
 export const NAV_LINKS = [
-  { label: "Accueil", href: "#home" },
   { label: "Solutions", href: "#services" },
-  { label: "Expertise", href: "#approach" },
-  { label: "Réalisations", href: "#work" },
-  { label: "À propos", href: "#about" },
+  { label: "Expertise", href: "#engine-room" },
+  { label: "Missions", href: "#missions" },
+  { label: "About", href: "#origin" },
   { label: "Contact", href: "#contact" },
 ];
+
+export const SYSTEM_MODULES = [
+  {
+    id: "web",
+    label: "WEB",
+    title: "Web",
+    description: "Sites et plateformes web construits pour durer et convertir.",
+  },
+  {
+    id: "mobile",
+    label: "MOBILE",
+    title: "Mobile",
+    description: "Applications iOS et Android pensées pour l'usage réel.",
+  },
+  {
+    id: "software",
+    label: "SOFTWARE",
+    title: "Software",
+    description: "Logiciels métiers sur mesure, taillés pour vos processus.",
+  },
+  {
+    id: "ai",
+    label: "AI",
+    title: "AI",
+    description: "Intelligence artificielle intégrée à vos produits, pas ajoutée en surface.",
+  },
+  {
+    id: "data",
+    label: "DATA",
+    title: "Data",
+    description: "Des données structurées, fiables, exploitables.",
+  },
+  {
+    id: "automation",
+    label: "AUTOMATION",
+    title: "Automation",
+    description: "Des processus manuels transformés en systèmes automatisés.",
+  },
+  {
+    id: "cloud",
+    label: "CLOUD",
+    title: "Cloud",
+    description: "Une infrastructure qui tient la charge, du premier jour à l'échelle.",
+  },
+] as const;
 
 export const SERVICES = [
   {
     number: "01",
-    title: "Web",
-    slug: "web",
-    description:
-      "Sites vitrines premium, plateformes web et expériences digitales pensées pour convertir.",
+    title: "Digital Products",
+    description: "Applications web et mobiles conçues de bout en bout, de l'idée au déploiement.",
+    tech: ["React", "Next.js", "Flutter"],
   },
   {
     number: "02",
-    title: "Mobile",
-    slug: "mobile",
-    description:
-      "Applications mobiles modernes, fluides et intuitives pour iOS et Android.",
+    title: "Software Engineering",
+    description: "Logiciels métiers sur mesure, pensés pour vos processus réels.",
+    tech: ["Java", "Spring Boot", "PostgreSQL"],
   },
   {
     number: "03",
-    title: "Software",
-    slug: "software",
-    description:
-      "Logiciels métiers et applications sur mesure conçus pour vos processus réels.",
+    title: "Digital Platforms",
+    description: "Plateformes complexes et écosystèmes numériques connectés.",
+    tech: ["Node.js", "APIs", "Cloud"],
   },
   {
     number: "04",
-    title: "Platforms",
-    slug: "platforms",
-    description:
-      "Plateformes digitales complexes et écosystèmes connectés, pensés pour évoluer.",
+    title: "UI / UX",
+    description: "Expériences digitales pensées pour l'utilisateur, pas pour la démo.",
+    tech: ["Figma", "Design Systems"],
   },
   {
     number: "05",
-    title: "E-commerce",
-    slug: "e-commerce",
-    description:
-      "Solutions de commerce digital adaptées aux réalités et usages locaux.",
+    title: "AI & Automation",
+    description: "Automatisation des opérations et intégration de systèmes intelligents.",
+    tech: ["AI", "APIs", "Automation"],
   },
   {
     number: "06",
-    title: "Automation",
-    slug: "automation",
-    description:
-      "Automatisation des processus métiers et intégration d'outils intelligents.",
+    title: "E-commerce",
+    description: "Solutions de commerce digital adaptées aux usages et marchés locaux.",
+    tech: ["React", "Payments", "APIs"],
   },
   {
     number: "07",
-    title: "UI / UX",
-    slug: "ui-ux",
-    description:
-      "Interfaces modernes, claires et pensées pour l'utilisateur final.",
+    title: "Cloud & Infrastructure",
+    description: "Architecture, déploiement et infrastructure taillés pour la charge réelle.",
+    tech: ["Docker", "Git", "GitLab"],
+  },
+] as const;
+
+export const MISSIONS = [
+  {
+    id: "xalisgo",
+    name: "XalisGo",
+    category: "Fintech / Digital Platform",
+    challenge: "Simplifier les transactions financières du quotidien pour un usage massif et mobile-first.",
+    strategy: "Repenser le parcours de paiement autour de la rapidité et de la confiance.",
+    design: "Une interface épurée, lisible en une main, pensée pour la répétition.",
+    engineering: "Architecture orientée API, synchronisation temps réel, sécurité des transactions.",
+    result: "Une plateforme stable, prête à absorber la montée en charge.",
+    tech: ["React", "Spring Boot", "PostgreSQL"],
   },
   {
-    number: "08",
-    title: "AI & Intelligent Systems",
-    slug: "ai",
-    description:
-      "Intégration de l'intelligence artificielle dans vos produits digitaux.",
+    id: "pharma-connect",
+    name: "Pharma Connect",
+    category: "HealthTech / Mobile",
+    challenge: "Connecter patients et pharmacies en temps réel, sans friction.",
+    strategy: "Prioriser la disponibilité de l'information et la simplicité de recherche.",
+    design: "Une app mobile claire, accessible, pensée pour tous les âges.",
+    engineering: "Synchronisation des stocks, géolocalisation, notifications.",
+    result: "Un pont digital fiable entre patients et officines.",
+    tech: ["Flutter", "Java", "MySQL"],
   },
-];
+  {
+    id: "fintrack",
+    name: "FinTrack",
+    category: "FinTech / Mobile",
+    challenge: "Donner aux indépendants et PME une vision claire de leurs finances.",
+    strategy: "Transformer des données financières complexes en décisions simples.",
+    design: "Des tableaux de bord lisibles, des chiffres qui parlent d'eux-mêmes.",
+    engineering: "Agrégation de données, calculs en temps réel, exports.",
+    result: "Un système de suivi financier intelligent et évolutif.",
+    tech: ["Flutter", "Spring Boot", "Docker"],
+  },
+] as const;
 
 export const PROCESS_STEPS = [
   {
     number: "01",
-    title: "Comprendre",
+    title: "Discover",
     description: "Nous identifions le problème réel derrière votre besoin.",
   },
   {
     number: "02",
-    title: "Concevoir",
-    description: "Nous transformons les besoins en expérience utilisateur.",
+    title: "Define",
+    description: "Nous cadrons la portée, les priorités et les contraintes.",
   },
   {
     number: "03",
-    title: "Architecturer",
-    description: "Nous construisons une base technique solide et évolutive.",
+    title: "Design",
+    description: "Nous transformons les besoins en expérience concrète.",
   },
   {
     number: "04",
-    title: "Développer",
-    description: "Nous transformons le concept en produit fonctionnel.",
+    title: "Engineer",
+    description: "Nous construisons une base technique solide et évolutive.",
   },
   {
     number: "05",
-    title: "Faire évoluer",
-    description: "Nous améliorons continuellement la solution dans le temps.",
+    title: "Launch",
+    description: "Nous livrons un produit fonctionnel, testé, prêt à l'usage.",
   },
-];
+  {
+    number: "06",
+    title: "Evolve",
+    description: "Nous faisons évoluer la solution avec vos besoins réels.",
+  },
+] as const;
 
-export const PILLARS = [
-  {
-    title: "Sur mesure",
-    description: "Aucune solution copiée sur un template. Chaque système est pensé pour vous.",
-  },
-  {
-    title: "Pensé pour le terrain",
-    description: "Des produits adaptés aux réalités des entreprises africaines.",
-  },
-  {
-    title: "Design + Technologie",
-    description: "Une expérience exceptionnelle soutenue par une architecture solide.",
-  },
-  {
-    title: "Vision long terme",
-    description: "Nous construisons des systèmes capables d'évoluer avec vous.",
-  },
-];
-
-export const PROJECTS = [
-  {
-    number: "01",
-    name: "XalisGo",
-    category: "Fintech / Web Platform",
-    description:
-      "Une plateforme de paiement digital pensée pour simplifier les transactions du quotidien.",
-    tech: ["React", "Spring Boot", "PostgreSQL"],
-  },
-  {
-    number: "02",
-    name: "Pharma Connect",
-    category: "HealthTech / Mobile",
-    description:
-      "Une application mobile connectant patients et pharmacies en temps réel.",
-    tech: ["Flutter", "Java", "MySQL"],
-  },
-  {
-    number: "03",
-    name: "FinTrack",
-    category: "FinTech / Mobile",
-    description:
-      "Un système de suivi financier intelligent pour entreprises et indépendants.",
-    tech: ["Flutter", "Spring Boot", "Docker"],
-  },
-];
-
-export const TECHNOLOGIES = [
-  "Java",
-  "Spring Boot",
-  "Angular",
-  "React",
-  "Flutter",
-  "PostgreSQL",
-  "MySQL",
-  "Docker",
-  "Git",
-  "GitLab",
-  "APIs",
-  "Cloud",
-  "AI",
-];
-
-export const STATS = [
-  { value: "01", label: "Vision" },
-  { value: "∞", label: "Possibilités" },
-  { value: "100%", label: "Sur mesure" },
-  { value: "24/7", label: "Digital" },
-];
+export const TECH_STACK = {
+  Frontend: ["React", "Next.js", "Angular"],
+  Backend: ["Java", "Spring Boot", "Node.js"],
+  Mobile: ["Flutter"],
+  Database: ["PostgreSQL", "MySQL"],
+  Infrastructure: ["Docker", "Git", "GitLab"],
+  Systems: ["REST APIs", "AI"],
+} as const;
 
 export const CONTACT_INFO = {
   city: "Dakar, Sénégal",
+  coordinates: "14.6928° N, 17.4467° W",
   email: "contact@oriontech.sn",
   phone: "+221 XX XXX XX XX",
 };
@@ -174,4 +186,21 @@ export const SOCIAL_LINKS = [
   { label: "Instagram", href: "#" },
   { label: "Facebook", href: "#" },
   { label: "GitHub", href: "#" },
+];
+
+export const PROJECT_TYPES = [
+  "Site web",
+  "Application mobile",
+  "Logiciel sur mesure",
+  "Plateforme digitale",
+  "E-commerce",
+  "Autre",
+];
+
+export const BUDGET_RANGES = [
+  "Moins de 2 000 000 FCFA",
+  "2 000 000 – 5 000 000 FCFA",
+  "5 000 000 – 15 000 000 FCFA",
+  "Plus de 15 000 000 FCFA",
+  "À discuter",
 ];

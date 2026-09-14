@@ -14,8 +14,8 @@ export default function SectionLabel({ index, label, light }: SectionLabelProps)
       >
         {index}
       </span>
-      <span className="h-px w-10 bg-orion-gray/40" />
-      <span className="text-xs tracking-[0.25em] uppercase text-orion-gray">
+      <span className="h-px w-10 bg-orion-muted/40" />
+      <span className="text-xs tracking-[0.25em] uppercase text-orion-muted">
         {label}
       </span>
     </div>

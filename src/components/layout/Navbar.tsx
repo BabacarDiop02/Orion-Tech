@@ -28,17 +28,17 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-midnight/80 backdrop-blur-md border-b border-white/5 py-4"
+          ? "bg-midnight/85 backdrop-blur-md border-b border-white/5 py-4"
           : "bg-transparent py-6"
       }`}
     >
       <nav className="mx-auto max-w-7xl px-6 lg:px-10 flex items-center justify-between">
         <a
-          href="#home"
-          className="font-display text-lg tracking-[0.15em] text-offwhite"
+          href="#hero"
+          className="font-display text-lg tracking-[0.2em] text-offwhite"
           onClick={handleNavClick}
         >
-          ORION<span className="text-orion-blue">TECH</span>
+          ORION<span className="text-orion-cyan">·</span>TECH
         </a>
 
         <ul className="hidden lg:flex items-center gap-10">
@@ -46,7 +46,7 @@ export default function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm text-orion-gray hover:text-offwhite transition-colors duration-300 tracking-wide"
+                className="text-xs tracking-[0.15em] uppercase text-orion-muted hover:text-offwhite transition-colors duration-300"
               >
                 {link.label}
               </a>
@@ -56,9 +56,9 @@ export default function Navbar() {
 
         <a
           href="#contact"
-          className="hidden lg:inline-flex items-center gap-2 rounded-full border border-orion-blue/50 px-5 py-2.5 text-sm text-offwhite hover:bg-orion-blue hover:border-orion-blue transition-all duration-300"
+          className="hidden lg:inline-flex items-center gap-2 rounded-full border border-orion-blue/50 px-5 py-2.5 text-xs tracking-[0.1em] uppercase text-offwhite hover:bg-orion-blue hover:border-orion-blue transition-all duration-300"
         >
-          Parlons de votre projet
+          Start a project
         </a>
 
         <button
@@ -119,11 +119,11 @@ export default function Navbar() {
                 onClick={handleNavClick}
                 className="mt-10 inline-flex w-fit items-center gap-2 rounded-full bg-orion-blue px-6 py-3 text-sm text-offwhite"
               >
-                Parlons de votre projet
+                Start a project
               </motion.a>
             </div>
-            <div className="px-8 pb-10 text-xs tracking-[0.2em] text-orion-gray uppercase">
-              Dakar · Sénégal
+            <div className="px-8 pb-10 text-xs tracking-[0.2em] text-orion-muted uppercase">
+              Dakar · Senegal
             </div>
           </motion.div>
         )}
