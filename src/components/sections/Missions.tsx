@@ -8,11 +8,11 @@ import SectionLabel from "@/components/ui/SectionLabel";
 import { MISSIONS } from "@/lib/data";
 
 const DETAIL_ROWS = [
-  { key: "challenge" as const, label: "Challenge" },
-  { key: "strategy" as const, label: "Strategy" },
+  { key: "challenge" as const, label: "Défi" },
+  { key: "strategy" as const, label: "Stratégie" },
   { key: "design" as const, label: "Design" },
-  { key: "engineering" as const, label: "Engineering" },
-  { key: "result" as const, label: "Result" },
+  { key: "engineering" as const, label: "Ingénierie" },
+  { key: "result" as const, label: "Résultat" },
 ];
 
 export default function Missions() {
@@ -34,7 +34,7 @@ export default function Missions() {
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-offwhite max-w-2xl text-balance">
-            Ideas, engineered into reality.
+            Des idées, transformées en réalité.
           </h2>
         </Reveal>
       </div>
@@ -44,7 +44,7 @@ export default function Missions() {
           <Reveal key={project.id} delay={i * 0.1}>
             <button
               type="button"
-              data-cursor-label="EXPLORE PROJECT"
+              data-cursor-label="VOIR LE PROJET"
               onClick={() => setSelected(project.id)}
               className="group relative block w-full text-left border-t border-white/10 last:border-b"
             >
@@ -150,7 +150,7 @@ export default function Missions() {
                     onClick={() => setSelected(null)}
                     className="inline-flex items-center gap-2 rounded-full bg-orion-blue px-7 py-3.5 text-sm font-medium text-offwhite hover:bg-orion-blue/90 transition-colors"
                   >
-                    Start a similar project →
+                    Démarrer un projet similaire →
                   </a>
                 </div>
               </motion.div>

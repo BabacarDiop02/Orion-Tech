@@ -17,7 +17,7 @@ export default function Services() {
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-offwhite max-w-3xl text-balance">
-            What we build.
+            Ce que nous construisons.
           </h2>
         </Reveal>
 

@@ -22,7 +22,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-xs tracking-[0.35em] uppercase text-orion-cyan mb-8"
         >
-          Digital Engineering Studio
+          Studio d&apos;Ingénierie Digitale
         </motion.p>
 
         <h1 className="font-display text-balance text-[2.4rem] leading-[1.08] sm:text-6xl lg:text-[5rem] lg:leading-[1.05] max-w-4xl">
@@ -32,7 +32,7 @@ export default function Hero() {
             transition={{ duration: 0.9, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
             className="block text-offwhite"
           >
-            We don&apos;t just build websites.
+            Nous ne créons pas que des sites web.
           </motion.span>
           <motion.span
             initial={{ opacity: 0, y: 28 }}
@@ -40,7 +40,7 @@ export default function Hero() {
             transition={{ duration: 0.9, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
             className="block bg-gradient-to-r from-orion-cyan to-orion-blue bg-clip-text text-transparent"
           >
-            We build what comes next.
+            Nous construisons ce qui vient après.
           </motion.span>
         </h1>
 
@@ -53,7 +53,7 @@ export default function Hero() {
           <span className="font-display text-sm tracking-[0.25em] text-offwhite">ORION TECH</span>
           <span className="h-px w-8 bg-orion-muted/40" />
           <span className="text-xs tracking-[0.15em] uppercase text-orion-muted">
-            Dakar — Senegal
+            Dakar — Sénégal
           </span>
         </motion.div>
 
@@ -67,7 +67,7 @@ export default function Hero() {
             href="#contact"
             className="group inline-flex items-center gap-2 rounded-full bg-orion-blue px-7 py-3.5 text-sm font-medium text-offwhite transition-all duration-300 hover:bg-orion-blue/90 hover:gap-3"
           >
-            Start a project
+            Démarrer un projet
             <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">
               →
             </span>
@@ -76,7 +76,7 @@ export default function Hero() {
             href="#signal"
             className="inline-flex items-center gap-2 text-sm text-offwhite/80 hover:text-offwhite transition-colors"
           >
-            Enter Orion
+            Entrer dans Orion
             <span aria-hidden="true" className="animate-pulse-slow">
               ↓
             </span>

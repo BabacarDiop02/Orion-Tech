@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import Constellation from "@/components/ui/Constellation";
 
 const SEQUENCE = [
-  { text: "WHAT IF", delay: 0 },
-  { text: "YOUR IDEA", delay: 0.6 },
-  { text: "COULD CHANGE", delay: 1.2 },
-  { text: "EVERYTHING?", delay: 1.8, accent: true },
+  { text: "ET SI", delay: 0 },
+  { text: "VOTRE IDÉE", delay: 0.6 },
+  { text: "POUVAIT TOUT", delay: 1.2 },
+  { text: "CHANGER ?", delay: 1.8, accent: true },
 ];
 
 export default function FinalCTA() {
@@ -41,7 +41,7 @@ export default function FinalCTA() {
           transition={{ duration: 0.6, delay: 2.4 }}
           className="mt-10 font-display text-2xl text-offwhite"
         >
-          Let&apos;s build it.
+          Construisons-la.
         </motion.p>
 
         <motion.div
@@ -55,7 +55,7 @@ export default function FinalCTA() {
             href="#contact"
             className="group inline-flex items-center gap-2 rounded-full bg-orion-blue px-9 py-4 text-base font-medium text-offwhite transition-all duration-300 hover:bg-orion-blue/90 hover:gap-3"
           >
-            Start with Orion
+            Démarrer avec Orion
             <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">
               →
             </span>

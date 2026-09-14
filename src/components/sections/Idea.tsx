@@ -5,11 +5,11 @@ import Reveal from "@/components/ui/Reveal";
 import SectionLabel from "@/components/ui/SectionLabel";
 
 const SATELLITES = [
-  { label: "Problem", angle: -90 },
+  { label: "Problème", angle: -90 },
   { label: "Vision", angle: -18 },
-  { label: "Users", angle: 54 },
+  { label: "Utilisateurs", angle: 54 },
   { label: "Business", angle: 126 },
-  { label: "Technology", angle: 198 },
+  { label: "Technologie", angle: 198 },
 ];
 
 export default function Idea() {
@@ -18,12 +18,12 @@ export default function Idea() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-16 items-center">
         <div className="lg:col-span-5">
           <Reveal>
-            <SectionLabel index="02" label="The Idea" light />
+            <SectionLabel index="02" label="L'Idée" light />
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-offwhite text-balance">
-              You bring the problem.
-              <span className="block text-orion-cyan">We engineer the possibility.</span>
+              Vous apportez le problème.
+              <span className="block text-orion-cyan">Nous concevons la possibilité.</span>
             </h2>
           </Reveal>
         </div>
@@ -77,9 +77,9 @@ export default function Idea() {
               className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex h-28 w-28 sm:h-32 sm:w-32 items-center justify-center rounded-full border border-orion-cyan/40 bg-gradient-to-br from-orion-blue/20 to-orion-cyan/10"
             >
               <span className="font-display text-xs tracking-[0.15em] text-center text-offwhite">
-                YOUR
+                VOTRE
                 <br />
-                IDEA
+                IDÉE
               </span>
             </motion.div>
           </div>

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Constellation from "@/components/ui/Constellation";
 
 export const metadata = {
-  title: "Signal Lost",
+  title: "Signal Perdu",
 };
 
 export default function NotFound() {
@@ -14,15 +14,15 @@ export default function NotFound() {
 
       <div className="relative">
         <p className="text-xs tracking-[0.3em] uppercase text-orion-cyan mb-6">404</p>
-        <h1 className="font-display text-4xl sm:text-6xl text-offwhite">SIGNAL LOST.</h1>
+        <h1 className="font-display text-4xl sm:text-6xl text-offwhite">SIGNAL PERDU.</h1>
         <p className="mt-6 max-w-md mx-auto text-orion-muted leading-relaxed">
-          The page you&apos;re looking for could not be located.
+          La page que vous recherchez est introuvable.
         </p>
         <Link
           href="/"
           className="mt-10 inline-flex items-center gap-2 rounded-full bg-orion-blue px-7 py-3.5 text-sm font-medium text-offwhite transition-colors hover:bg-orion-blue/90"
         >
-          Return to Orion
+          Retour à Orion
         </Link>
       </div>
     </main>

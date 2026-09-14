@@ -23,7 +23,7 @@ const siteUrl = "https://oriontech.sn";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "ORION TECH — Digital Solutions Built in Dakar",
+    default: "ORION TECH — Solutions Digitales Conçues à Dakar",
     template: "%s | Orion Tech",
   },
   description:
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     locale: "fr_SN",
     url: siteUrl,
     siteName: "Orion Tech",
-    title: "ORION TECH — Digital Solutions Built in Dakar",
+    title: "ORION TECH — Solutions Digitales Conçues à Dakar",
     description:
       "Orion Tech conçoit et développe des solutions digitales sur mesure : applications web, mobile, logiciels, plateformes et systèmes intelligents depuis Dakar, Sénégal.",
     images: [
@@ -59,13 +59,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Orion Tech — Digital Engineering Studio, Dakar",
+        alt: "Orion Tech — Studio d'Ingénierie Digitale, Dakar",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ORION TECH — Digital Solutions Built in Dakar",
+    title: "ORION TECH — Solutions Digitales Conçues à Dakar",
     description:
       "Orion Tech conçoit et développe des solutions digitales sur mesure depuis Dakar, Sénégal.",
     images: ["/og-image.png"],

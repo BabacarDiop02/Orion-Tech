@@ -51,7 +51,7 @@ export default function Contact() {
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="font-display text-4xl sm:text-5xl text-offwhite text-balance">
-              Let&apos;s talk about your project.
+              Parlons de votre projet.
             </h2>
           </Reveal>
           <Reveal delay={0.2}>

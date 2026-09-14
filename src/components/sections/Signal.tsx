@@ -25,7 +25,7 @@ export default function Signal() {
     <section id="signal" className="relative bg-midnight py-28 lg:py-40 overflow-hidden">
       <div className="mx-auto max-w-5xl px-6 lg:px-10 text-center">
         <Reveal>
-          <SectionLabel index="01" label="The Signal" />
+          <SectionLabel index="01" label="Le Signal" />
         </Reveal>
 
         <div className="flex justify-center mb-10">
@@ -63,8 +63,8 @@ export default function Signal() {
 
         <Reveal delay={0.1}>
           <h2 className="font-display text-4xl sm:text-6xl lg:text-7xl leading-[1.1] text-offwhite text-balance">
-            Every great solution
-            <span className="block text-orion-cyan">starts with a signal.</span>
+            Toute grande solution
+            <span className="block text-orion-cyan">commence par un signal.</span>
           </h2>
         </Reveal>
 

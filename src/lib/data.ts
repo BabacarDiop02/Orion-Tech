@@ -2,7 +2,7 @@ export const NAV_LINKS = [
   { label: "Solutions", href: "#services" },
   { label: "Expertise", href: "#engine-room" },
   { label: "Missions", href: "#missions" },
-  { label: "About", href: "#origin" },
+  { label: "À propos", href: "#origin" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -27,8 +27,8 @@ export const SYSTEM_MODULES = [
   },
   {
     id: "ai",
-    label: "AI",
-    title: "AI",
+    label: "IA",
+    title: "IA",
     description: "Intelligence artificielle intégrée à vos produits, pas ajoutée en surface.",
   },
   {
@@ -54,19 +54,19 @@ export const SYSTEM_MODULES = [
 export const SERVICES = [
   {
     number: "01",
-    title: "Digital Products",
+    title: "Produits Digitaux",
     description: "Applications web et mobiles conçues de bout en bout, de l'idée au déploiement.",
     tech: ["React", "Next.js", "Flutter"],
   },
   {
     number: "02",
-    title: "Software Engineering",
+    title: "Ingénierie Logicielle",
     description: "Logiciels métiers sur mesure, pensés pour vos processus réels.",
     tech: ["Java", "Spring Boot", "PostgreSQL"],
   },
   {
     number: "03",
-    title: "Digital Platforms",
+    title: "Plateformes Digitales",
     description: "Plateformes complexes et écosystèmes numériques connectés.",
     tech: ["Node.js", "APIs", "Cloud"],
   },
@@ -78,15 +78,15 @@ export const SERVICES = [
   },
   {
     number: "05",
-    title: "AI & Automation",
+    title: "IA & Automatisation",
     description: "Automatisation des opérations et intégration de systèmes intelligents.",
-    tech: ["AI", "APIs", "Automation"],
+    tech: ["IA", "APIs", "Automatisation"],
   },
   {
     number: "06",
     title: "E-commerce",
     description: "Solutions de commerce digital adaptées aux usages et marchés locaux.",
-    tech: ["React", "Payments", "APIs"],
+    tech: ["React", "Paiements", "APIs"],
   },
   {
     number: "07",
@@ -100,7 +100,7 @@ export const MISSIONS = [
   {
     id: "xalisgo",
     name: "XalisGo",
-    category: "Fintech / Digital Platform",
+    category: "Fintech / Plateforme Digitale",
     challenge: "Simplifier les transactions financières du quotidien pour un usage massif et mobile-first.",
     strategy: "Repenser le parcours de paiement autour de la rapidité et de la confiance.",
     design: "Une interface épurée, lisible en une main, pensée pour la répétition.",
@@ -111,7 +111,7 @@ export const MISSIONS = [
   {
     id: "pharma-connect",
     name: "Pharma Connect",
-    category: "HealthTech / Mobile",
+    category: "Santé numérique / Mobile",
     challenge: "Connecter patients et pharmacies en temps réel, sans friction.",
     strategy: "Prioriser la disponibilité de l'information et la simplicité de recherche.",
     design: "Une app mobile claire, accessible, pensée pour tous les âges.",
@@ -135,32 +135,32 @@ export const MISSIONS = [
 export const PROCESS_STEPS = [
   {
     number: "01",
-    title: "Discover",
+    title: "Découvrir",
     description: "Nous identifions le problème réel derrière votre besoin.",
   },
   {
     number: "02",
-    title: "Define",
+    title: "Définir",
     description: "Nous cadrons la portée, les priorités et les contraintes.",
   },
   {
     number: "03",
-    title: "Design",
+    title: "Concevoir",
     description: "Nous transformons les besoins en expérience concrète.",
   },
   {
     number: "04",
-    title: "Engineer",
+    title: "Développer",
     description: "Nous construisons une base technique solide et évolutive.",
   },
   {
     number: "05",
-    title: "Launch",
+    title: "Lancer",
     description: "Nous livrons un produit fonctionnel, testé, prêt à l'usage.",
   },
   {
     number: "06",
-    title: "Evolve",
+    title: "Évoluer",
     description: "Nous faisons évoluer la solution avec vos besoins réels.",
   },
 ] as const;
@@ -169,9 +169,9 @@ export const TECH_STACK = {
   Frontend: ["React", "Next.js", "Angular"],
   Backend: ["Java", "Spring Boot", "Node.js"],
   Mobile: ["Flutter"],
-  Database: ["PostgreSQL", "MySQL"],
+  "Base de données": ["PostgreSQL", "MySQL"],
   Infrastructure: ["Docker", "Git", "GitLab"],
-  Systems: ["REST APIs", "AI"],
+  Systèmes: ["REST APIs", "IA"],
 } as const;
 
 export const CONTACT_INFO = {

@@ -8,15 +8,15 @@ export default function Philosophy() {
       <div className="relative mx-auto max-w-4xl px-6 lg:px-10 text-center">
         <Reveal y={16}>
           <p className="font-display text-4xl sm:text-6xl lg:text-7xl leading-[1.1] text-offwhite text-balance">
-            TECHNOLOGY
-            <span className="block text-orion-muted">SHOULD DISAPPEAR.</span>
+            LA TECHNOLOGIE
+            <span className="block text-orion-muted">DOIT DISPARAÎTRE.</span>
           </p>
         </Reveal>
 
         <Reveal delay={0.5} y={16}>
           <p className="mt-6 font-display text-4xl sm:text-6xl lg:text-7xl leading-[1.1] text-offwhite text-balance">
-            THE EXPERIENCE
-            <span className="block text-orion-cyan">SHOULD REMAIN.</span>
+            L&apos;EXPÉRIENCE
+            <span className="block text-orion-cyan">DOIT RESTER.</span>
           </p>
         </Reveal>
       </div>

@@ -66,8 +66,8 @@ export default function Origin() {
 
         <Reveal delay={0.2}>
           <p className="mt-16 font-display text-2xl sm:text-3xl text-offwhite text-balance">
-            Built in Dakar.
-            <span className="block text-orion-cyan">Connected to the world.</span>
+            Conçu à Dakar.
+            <span className="block text-orion-cyan">Connecté au monde.</span>
           </p>
         </Reveal>
       </div>

@@ -16,7 +16,7 @@ export default function Footer() {
               ORION<span className="text-orion-cyan">·</span>TECH
             </p>
             <p className="mt-4 text-orion-muted max-w-xs">
-              Digital solutions. Built with purpose.
+              Solutions digitales. Conçues avec intention.
             </p>
           </div>
 
@@ -40,7 +40,7 @@ export default function Footer() {
 
           <div className="lg:col-span-2">
             <p className="text-xs tracking-[0.2em] uppercase text-orion-muted mb-5">
-              Social
+              Réseaux
             </p>
             <ul className="space-y-3">
               {SOCIAL_LINKS.map((social) => (
@@ -81,7 +81,7 @@ export default function Footer() {
 
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-orion-muted tracking-wide">
           <p>© 2026 Orion Tech. Tous droits réservés.</p>
-          <p className="uppercase tracking-[0.2em]">Built in Dakar. Connected to the world.</p>
+          <p className="uppercase tracking-[0.2em]">Conçu à Dakar. Connecté au monde.</p>
         </div>
       </div>
     </footer>

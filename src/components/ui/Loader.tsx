@@ -104,7 +104,7 @@ export default function Loader() {
             transition={{ delay: 1.1, duration: 0.5 }}
             className="mt-2 text-[10px] tracking-[0.25em] uppercase text-orion-muted"
           >
-            Initializing system<span className="animate-blink">...</span>
+            Initialisation du système<span className="animate-blink">...</span>
           </motion.p>
         </motion.div>
       )}

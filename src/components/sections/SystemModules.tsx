@@ -14,12 +14,12 @@ export default function SystemModules() {
     <section id="system" className="relative bg-midnight py-28 lg:py-40 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal>
-          <SectionLabel index="03" label="The System" />
+          <SectionLabel index="03" label="Le Système" />
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-offwhite max-w-2xl text-balance">
-            One idea. Seven modules.
-            <span className="block text-orion-blue">One connected system.</span>
+            Une idée. Sept modules.
+            <span className="block text-orion-blue">Un système connecté.</span>
           </h2>
         </Reveal>
 

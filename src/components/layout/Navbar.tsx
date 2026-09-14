@@ -65,7 +65,7 @@ export default function Navbar() {
           href="#contact"
           className="hidden lg:inline-flex items-center gap-2 rounded-full border border-orion-blue/50 px-5 py-2.5 text-xs tracking-[0.1em] uppercase text-offwhite hover:bg-orion-blue hover:border-orion-blue transition-all duration-300"
         >
-          Start a project
+          Démarrer un projet
         </a>
 
         <button
@@ -128,11 +128,11 @@ export default function Navbar() {
                     onClick={handleNavClick}
                     className="mt-10 inline-flex w-fit items-center gap-2 rounded-full bg-orion-blue px-6 py-3 text-sm text-offwhite"
                   >
-                    Start a project
+                    Démarrer un projet
                   </motion.a>
                 </div>
                 <div className="px-8 pb-10 text-xs tracking-[0.2em] text-orion-muted uppercase">
-                  Dakar · Senegal
+                  Dakar · Sénégal
                 </div>
               </motion.div>
             )}

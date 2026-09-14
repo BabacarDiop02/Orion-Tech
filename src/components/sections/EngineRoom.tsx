@@ -16,7 +16,7 @@ export default function EngineRoom() {
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-offwhite max-w-2xl text-balance">
-            The engine room.
+            La salle des machines.
           </h2>
         </Reveal>
 

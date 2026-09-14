@@ -18,11 +18,11 @@ export default function Process() {
     <section id="process" className="relative bg-midnight py-28 lg:py-36">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal>
-          <SectionLabel index="06" label="Process" />
+          <SectionLabel index="06" label="Processus" />
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-offwhite max-w-2xl text-balance">
-            From signal to system.
+            Du signal au système.
           </h2>
         </Reveal>
 
